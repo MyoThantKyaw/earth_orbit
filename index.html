@@ -25,15 +25,14 @@
             var menu_btn = document.getElementById("menu-button")
             var menu = document.getElementById("menu")
             menu_btn.onclick = function () {
-                if (menu.style.display == "flex") {
+                
+                if (menu.style.display == "flex" || menu.style.display == "") {
                     menu.style.display = "none";
                 }
                 else {
                     menu.style.display = "flex";
-                }
-                console.log("here..")
+                }   
             }
-            console.log("here..")
         }
     </script>
 </head>
@@ -72,14 +71,24 @@
     </div>
     <div id="menu">
         <div>
-            <input type="radio" id="perspectiveView" name="cameraView" value="perspectiveView" checked>
+            <input type="checkbox" id="chk-axis" name="chk-axis" value="chk-axis" checked/>
+            <label for="chk-axis">Rotation Axis</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk-plane" name="chk-plane" value="chk-plane" checked/>
+            <label for="chk-plane">Plane</label>
+        </div>
+        <div style="border-top : 1px solid rgb(56, 55, 55);"></div>
+        <div>
+            <input type="radio" id="perspectiveView" name="cameraView" value="perspectiveView" checked/>
             <label for="perspectiveView">Perspective View</label>
 
         </div>
         <div>
-            <input type="radio" id="orthographicView" name="cameraView" value="orthographicView">
+            <input type="radio" id="orthographicView" name="cameraView" value="orthographicView"/>
             <label for="orthographicView">Orthographic View</label>
         </div>
+       
     </div>
     <script src="app.bundle.3d.js"></script>
 </body>
