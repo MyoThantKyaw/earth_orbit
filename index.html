@@ -16,33 +16,72 @@
         .view-3d {
             /* width: 100%; */
         }
-
     </style>
-    <link rel="stylesheet" href="style.css"></link>
-
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <script>
+        
+        function addActions() {
+            var menu_btn = document.getElementById("menu-button")
+            var menu = document.getElementById("menu")
+            menu_btn.onclick = function () {
+                if (menu.style.display == "flex") {
+                    menu.style.display = "none";
+                }
+                else {
+                    menu.style.display = "flex";
+                }
+                console.log("here..")
+            }
+            console.log("here..")
+        }
+    </script>
 </head>
 
-<body>
+<body onload="addActions()">
     <div id="view-3d" class="view-3d">
 
-            
+
         <div id="toolbar">
             <div id="slider-container">
                 <input type="range" min="0" max="364.25" value="2000" class="slider" id="days-in-year">
                 <table id="months-in-year" style="table-layout: fixed">
                     <tr>
-                        <td align = "center">ဇန်</td><td align = "center">ဖေဖော်</td><td align = "center">မတ်</td><td align = "center">ဧပြီ</td><td align = "center">မေ</td><td align = "center">ဇွန်</td>
-                        <td align = "center">ဇူလိုင်</td><td align = "center">သြဂုတ်</td><td align = "center">စက်တင်</td><td align = "center">အောက်တို</td><td align = "center">နိုဝင်</td>
-                        <td align = "center" id="td-dec">ဒီဇင်</td>
+                        <td align="center">ဇန်</td>
+                        <td align="center">ဖေဖော်</td>
+                        <td align="center">မတ်</td>
+                        <td align="center">ဧပြီ</td>
+                        <td align="center">မေ</td>
+                        <td align="center">ဇွန်</td>
+                        <td align="center">ဇူလိုင်</td>
+                        <td align="center">သြဂုတ်</td>
+                        <td align="center">စက်တင်</td>
+                        <td align="center">အောက်တို</td>
+                        <td align="center">နိုဝင်</td>
+                        <td align="center" id="td-dec">ဒီဇင်</td>
                     </tr>
                 </table>
             </div>
         </div>
-            <script
-                    src="app.bundle.3d.js"></script>
-        
+      
+
     </div>
 
+    <div id="menu-button">
+        Options
+    </div>
+    <div id="menu">
+        <div>
+            <input type="radio" id="perspectiveView" name="cameraView" value="perspectiveView" checked>
+            <label for="perspectiveView">Perspective View</label>
+
+        </div>
+        <div>
+            <input type="radio" id="orthographicView" name="cameraView" value="orthographicView">
+            <label for="orthographicView">Orthographic View</label>
+        </div>
+    </div>
+    <script src="app.bundle.3d.js"></script>
 </body>
 
 </html>
