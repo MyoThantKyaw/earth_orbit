@@ -2,6 +2,7 @@ body{
     padding : 0;
     margin: 0;
     overflow-y: hidden;
+    background-color: black;
 }
 
 #days-in-year {
@@ -79,4 +80,38 @@ td{
 }
 #td-dec{
     border-right: none;
+}
+
+#menu-button{
+    position: fixed;
+    padding: 3px;
+    bottom: 10px;
+    left: 5px;
+    border: 1px solid #6d5c4a;
+    border-radius: 5px;
+    color: #ce8338;
+    cursor: pointer;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 3px;
+    bottom: 40px;
+    left: 5px;
+    color: #a57544;
+    border: 1px solid rgb(136, 102, 57);
+    border-radius: 5px;
+    
+}
+
+#menu > div{
+    padding: 3px;
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    cursor: pointer;
+    vertical-align: middle;
 }
