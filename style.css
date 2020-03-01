@@ -115,3 +115,9 @@ input[type="radio"] {
     cursor: pointer;
     vertical-align: middle;
 }
+
+input[type="checkbox"] {
+    
+    cursor: pointer;
+    vertical-align: middle;
+}
