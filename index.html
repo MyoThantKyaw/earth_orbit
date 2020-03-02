@@ -39,8 +39,6 @@
 
 <body onload="addActions()">
     <div id="view-3d" class="view-3d">
-
-
         <div id="toolbar">
             <div id="slider-container">
                 <input type="range" min="0" max="365.25" value="0" step = "0.001" class="slider" id="days-in-year">
@@ -74,11 +72,17 @@
         Options
     </div>
     <div id="menu">
+        <div id="adjust-earth-angle">
+            <button id="btn-inc-ang"> &lt;</button>
+            <span id="adjust-earth-angle-lb">Rotate Earth</span>
+            <button id="btn-dec-ang"> &gt;</button>
+        </div>
+        <div id="border-adjust-earth-angle" style="display : none; border-top : 1px solid rgb(56, 55, 55); margin-top: 3px;"></div>
         <p>Earth Rotation Speed</p>
         <div>
             <input type="range" min="0" max="1.299" value="0" step = "0.001" class="slider" id="earth-rotation-speed">
         </div>
-        <div style="border-top : 1px solid rgb(56, 55, 55);"></div>
+        <div style="border-top : 1px solid rgb(56, 55, 55); margin-top: 3px;"></div>
         <div>
             <input type="checkbox" id="chk-axis" name="chk-axis" value="chk-axis" checked/>
             <label for="chk-axis">Rotation Axis</label>
@@ -99,7 +103,7 @@
         </div>
        
     </div>
-    <script src="app.bundle.3d.js"></script>
+    <script src="C:\Users\myothantkyaw\AndroidStudioProjects\LatexTest\app\src\main\assets\scripts\app.bundle.3d.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-body{
-    padding : 0;
+body {
+    padding: 0;
     margin: 0;
     overflow-y: hidden;
     background-color: black;
@@ -9,7 +9,6 @@ body{
     padding: 0px;
     width: 100%;
     margin: 0px;
-    /* margin: 25px 50px 75px 100px; */
 }
 
 #toolbar {
@@ -18,7 +17,6 @@ body{
     position: absolute;
     left: 0px;
     top: 0px;
-    /* background-color: rebeccapurple; */
     display: block;
 }
 
@@ -26,7 +24,7 @@ body{
     margin: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
-}   
+}
 
 .slider {
     -webkit-appearance: none;
@@ -35,7 +33,7 @@ body{
     border-radius: 2px;
     background: #6b5f52;
     outline: none;
-    padding : 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -61,28 +59,29 @@ body{
     cursor: pointer;
 }
 
-#months-in-year{
+#months-in-year {
     width: 100%;
     font-size: .7em;
     color: #ff7f00;
     margin-top: 0px;
     padding-top: 0px;
 }
-table{
-    /* border: 1.5px solid #333333; */
+
+table {
     border-top: none;
 }
 
-td{
+td {
     padding-top: .25em;
     border-right: 1px solid #555555;
     vertical-align: center;
 }
-#td-dec{
+
+#td-dec {
     border-right: none;
 }
 
-#menu-button{
+#menu-button {
     position: fixed;
     padding: 3px;
     bottom: 10px;
@@ -94,7 +93,7 @@ td{
     font-size: .85em;
 }
 
-#menu{
+#menu {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -105,10 +104,9 @@ td{
     border: 1px solid rgb(136, 102, 57);
     border-radius: 5px;
     font-size: .8em;
-    
 }
 
-#menu > div{
+#menu>div {
     padding: 3px;
 }
 
@@ -123,20 +121,40 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-#btn-play-pause, #btn-play-pause-earth{
+#btn-play-pause, #btn-play-pause-earth {
     float: right;
     margin-top: 5px;
     margin-right: 10px;
-    background : transparent;
+    background: transparent;
     border: 1px solid #555555;
     border-radius: 3px;
     color: #ff7f00;
     padding-top: 7px;
     padding-bottom: 5px;
 }
-#menu > p{
+
+#menu>p {
     padding: 0;
-    
     margin: 3px;
     margin-bottom: 0;
+}
+
+#adjust-earth-angle {
+    display: none;
+}
+
+#adjust-earth-angle-lb {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#adjust-earth-angle>button {
+    border: 1px solid #6d5c4a;
+    border-radius: 5px;
+    background: transparent;
+    color: #a57544;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
