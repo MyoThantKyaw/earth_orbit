@@ -63,6 +63,7 @@
             </div>
             <div id="button-panel">
                 <button id="btn-play-pause">Pause</button>
+                <button id="btn-play-pause-earth">Pause Earth</button>
             </div>
         </div>
       
@@ -73,6 +74,11 @@
         Options
     </div>
     <div id="menu">
+        <p>Earth Rotation Speed</p>
+        <div>
+            <input type="range" min="0" max="1.022" value="0" step = "0.001" class="slider" id="earth-rotation-speed">
+        </div>
+        <div style="border-top : 1px solid rgb(56, 55, 55);"></div>
         <div>
             <input type="checkbox" id="chk-axis" name="chk-axis" value="chk-axis" checked/>
             <label for="chk-axis">Rotation Axis</label>
